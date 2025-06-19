@@ -1,0 +1,75 @@
+.texto-intro {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.texto-intro p {
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.centrado {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.centrado ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: left;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: #ffe165;
+}
+
+h2:hover, h3:hover {
+    color: #ffe165;
+    transition: color 0.3s ease;
+}
+
+.actor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centra verticalmente */
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .foto {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .foto img {
+    max-width: 140px;
+    border-radius: 10px;
+    border: 2px solid #d4af37;
+  }
+  
+  @media (max-width: 600px) {
+    .actor {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .foto img {
+      margin-top: 10px;
+    }
+  }
+  
